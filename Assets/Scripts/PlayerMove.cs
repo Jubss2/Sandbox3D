@@ -36,7 +36,7 @@ public class PlayerMove : MonoBehaviour
     private void Move(InputAction.CallbackContext ctx)
     {
         var movementDirection = ctx.ReadValue<Vector2>();
-        rb.velocity = new Vector3(movementDirection.x, -1f, movementDirection.y) * speed;
+        rb.velocity = new Vector3(movementDirection.x, 0f, movementDirection.y) * speed;
     }
 
 }
